@@ -1,7 +1,7 @@
 
 # Next JS 13 + Ant Design 5.0 Starter Project
 
-Ini adalah starter project Next JS bersi 13 dengan Antdesign versi 5. 
+Ini adalah starter project Next JS berisi 13 dengan Antdesign versi 5. 
 
 
 ## Authors
@@ -12,7 +12,7 @@ Ini adalah starter project Next JS bersi 13 dengan Antdesign versi 5.
 ## Features
 
 - Ready to user starter project
-- Basic Crud
+- Basic posts CRUD
 
 
 ## Installation
