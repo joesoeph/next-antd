@@ -19,7 +19,7 @@ export default function ListPosts() {
 
   return (
     <>
-      <ul>
+      <ul data-testid="list-posts">
         {data.map((item, index) => (
           <li key={index}>
             <Image src={item.image} alt="Test" width={200} height={200} />
