@@ -1,8 +1,8 @@
 const fs = require('fs');
 const { faker } = require('@faker-js/faker');
 
-const generatePosts = (count) => {
-    const data = {posts: []};
+const generatePosts = count => {
+  const data = { posts: [] };
 
   for (let i = 0; i < count; i++) {
     const post = {
@@ -18,7 +18,7 @@ const generatePosts = (count) => {
   return data;
 };
 
-const saveDataToFile = (data) => {
+const saveDataToFile = data => {
   const jsonData = JSON.stringify(data, null, 2);
   fs.writeFileSync('mockdb.json', jsonData);
 };
