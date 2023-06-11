@@ -8,7 +8,7 @@ import useSWR from 'swr';
 import fetcher from '@/app/lib/fetcher';
 
 export default function ListPosts() {
-  let [page, usePage] = useState(1);
+  let [page, setPage] = useState(1);
   const { data, error, isLoading } = useSWR(
     'http://localhost:3030/posts?_page=' + page,
     fetcher
@@ -32,14 +32,14 @@ export default function ListPosts() {
       <Button
         type="primary"
         onClick={function () {
-          usePage(--page);
+          setPage(--page);
         }}
       >
         Previous
       </Button>
       <button
         onClick={function () {
-          usePage(++page);
+          setPage(++page);
         }}
       >
         Next
