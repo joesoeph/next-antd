@@ -41,3 +41,11 @@ Ini adalah starter project Next JS berisi 13 dengan Antdesign versi 5.
 - Run `npm install` to installing all package
 - Run `npm run dev` to running next js app
 - Run `npm run server-mock` to running json mock server
+
+# Testing
+
+This project support testing using cypress and jest. Cypress test used for component testing and E2E testing. Jest test used for unit testing, for example when you create individual javascript helper. To run test, you can use these commands:
+
+- npm run test (for unit test)
+- npm run cy:run (for component test)
+- npm run cy:open (for E2E test using cypress browser)
